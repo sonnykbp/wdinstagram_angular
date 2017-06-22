@@ -1,5 +1,8 @@
+<h1>WDInstagram</h1>
 <div data-ng-repeat="instagram in vm.instagrams">
-  <p>{{instagram.author}}</p>
+  <div style="border: 1px solid black; width: 40%; padding: 20px; margin: 30px">
+  <p>{{instagram.author}}</a></p>
   <p>{{instagram.body}}</p>
-  <img src="{{instagram.photo_url}}">
+  <a data-ui-sref="WDInstagramShow({id: instagram.id})"><img src="{{instagram.photo_url}}" width="500px"/></a>
+</div>
 </div>
